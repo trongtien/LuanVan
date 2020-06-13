@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.scss";
+import Icons from '../../../Contants/icon'
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import {
@@ -55,7 +56,7 @@ function HeaderComponent(props) {
               </Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to="/Introduction">
+              <Link className="nav-link" to="">
                 Blog
               </Link>
             </NavItem>
@@ -75,7 +76,7 @@ function HeaderComponent(props) {
           <InputGroup>
             <Input />
             <InputGroupAddon addonType="append">
-              <InputGroupText>To !</InputGroupText>
+              <InputGroupText ><img src={Icons.searchIcon} /></InputGroupText>
             </InputGroupAddon>
           </InputGroup>
 

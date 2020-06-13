@@ -1,7 +1,8 @@
 import React from 'react'
+import './style.scss'
 import { Table, Button } from 'reactstrap';
 
-function ListBillComponent() {
+function CartBill() {
   return (
     <div>
       <Table bordered>
@@ -27,4 +28,4 @@ function ListBillComponent() {
   )
 }
 
-export default ListBillComponent
+export default CartBill

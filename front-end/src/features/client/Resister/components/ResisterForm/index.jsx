@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import './style.scss'
 
-function Resister() {
+function ResisterForm() {
   return (
     <div className="form-resister">
       <Row>
@@ -50,4 +50,4 @@ function Resister() {
   )
 }
 
-export default Resister;
+export default ResisterForm;

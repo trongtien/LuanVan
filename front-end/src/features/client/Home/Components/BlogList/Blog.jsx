@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Col, Card, Button, CardTitle, CardText, CardSubtitle } from 'reactstrap';
 import './style.scss'
 
-function BlogComponent() {
+function Blog() {
   return (
     <div className="blog">
       <Row xs="3">
@@ -11,7 +11,7 @@ function BlogComponent() {
             <CardTitle>Special Title Treatment</CardTitle>
             <CardSubtitle>With supporting text below as a natural lead-in to additional content.</CardSubtitle>
             <CardText>Ngày giờ đăng bài </CardText>
-            <Button>Xem thêm -></Button>
+            <Button>Xem thêm </Button>
           </Card>
         </Col>
         <Col >
@@ -19,7 +19,7 @@ function BlogComponent() {
             <CardTitle>Special Title Treatment</CardTitle>
             <CardSubtitle>With supporting text below as a natural lead-in to additional content.</CardSubtitle>
             <CardText>Ngày giờ đăng bài </CardText>
-            <Button>Xem thêm -></Button>
+            <Button>Xem thêm </Button>
           </Card>
         </Col>
         <Col >
@@ -27,7 +27,7 @@ function BlogComponent() {
             <CardTitle>Special Title Treatment</CardTitle>
             <CardSubtitle>With supporting text below as a natural lead-in to additional content.</CardSubtitle>
             <CardText>Ngày giờ đăng bài </CardText>
-            <Button>Xem thêm -></Button>
+            <Button>Xem thêm </Button>
           </Card>
         </Col>
         <Col >
@@ -35,7 +35,7 @@ function BlogComponent() {
             <CardTitle>Special Title Treatment</CardTitle>
             <CardSubtitle>With supporting text below as a natural lead-in to additional content.</CardSubtitle>
             <CardText>Ngày giờ đăng bài </CardText>
-            <Button>Xem thêm -></Button>
+            <Button>Xem thêm </Button>
           </Card>
         </Col>
         <Col >
@@ -43,7 +43,7 @@ function BlogComponent() {
             <CardTitle>Special Title Treatment</CardTitle>
             <CardSubtitle>With supporting text below as a natural lead-in to additional content.</CardSubtitle>
             <CardText>Ngày giờ đăng bài </CardText>
-            <Button>Xem thêm -></Button>
+            <Button>Xem thêm </Button>
           </Card>
         </Col>
         <Col >
@@ -51,7 +51,7 @@ function BlogComponent() {
             <CardTitle>Special Title Treatment</CardTitle>
             <CardSubtitle>With supporting text below as a natural lead-in to additional content.</CardSubtitle>
             <CardText>Ngày giờ đăng bài </CardText>
-            <Button>Xem thêm -></Button>
+            <Button>Xem thêm </Button>
           </Card>
         </Col>
         <Col >
@@ -59,7 +59,7 @@ function BlogComponent() {
             <CardTitle>Special Title Treatment</CardTitle>
             <CardSubtitle>With supporting text below as a natural lead-in to additional content.</CardSubtitle>
             <CardText>Ngày giờ đăng bài </CardText>
-            <Button>Xem thêm -></Button>
+            <Button>Xem thêm </Button>
           </Card>
         </Col>
         <Col >
@@ -67,7 +67,7 @@ function BlogComponent() {
             <CardTitle>Special Title Treatment</CardTitle>
             <CardSubtitle>With supporting text below as a natural lead-in to additional content.</CardSubtitle>
             <CardText>Ngày giờ đăng bài </CardText>
-            <Button>Xem thêm -></Button>
+            <Button>Xem thêm </Button>
           </Card>
         </Col>
         <Col >
@@ -75,7 +75,7 @@ function BlogComponent() {
             <CardTitle>Special Title Treatment</CardTitle>
             <CardSubtitle>With supporting text below as a natural lead-in to additional content.</CardSubtitle>
             <CardText>Ngày giờ đăng bài </CardText>
-            <Button>Xem thêm -></Button>
+            <Button>Xem thêm </Button>
           </Card>
         </Col>
 
@@ -89,4 +89,4 @@ function BlogComponent() {
   )
 }
 
-export default BlogComponent;
+export default Blog;

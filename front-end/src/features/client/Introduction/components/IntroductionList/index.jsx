@@ -1,8 +1,9 @@
 import React from 'react'
+import './style.scss'
 import { CardBody, CardTitle, CardText, Row, Col } from 'reactstrap';
 
 
-function IntroductionPage() {
+function IntroductionList() {
   return (
     <Row >
       <Col lg="12" style={{ backgroundImage: 'url(http://theme.hstatic.net/1000384235/1000541562/14/welcome_bg.jpg?v=263)', opacity: 'cover', padding: '210px 0 210px 0' }}>
@@ -45,5 +46,4 @@ function IntroductionPage() {
     </Row >
   )
 }
-
-export default IntroductionPage
+export default IntroductionList

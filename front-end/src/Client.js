@@ -1,22 +1,16 @@
 import React, { useState, Suspense, lazy } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
-// import HeaderComponent from './components/Header/HeaderConponent'
+import HeaderComponent from './components/Client/Header/HeaderConponent'
 import Loading from './components/Client/Loading/Loading'
 import LoginComponent from './components/Client/Login/LoginComponent'
 import SliderComponent from './components/Client/slider/SliderComponent'
 import FooterComponent from './components/Client/Footer/FooterComponent'
 
-const HeaderComponent = lazy(() => import('./components/Client/Header/HeaderConponent'))
-
-// import HomePage from './pages/HomePage'
-// import RegisterPage from './pages/RegisterPage'
-// import IntroductionPage from './pages/IntroductionPage'
-
-const HomePage = lazy(() => import('./pages/Client/HomePage'))
-const RegisterPage = lazy(() => import('./pages/Client/RegisterPage'))
-const IntroductionPage = lazy(() => import('./pages/Client/IntroductionPage'))
-const CardPage = lazy(() => import('./pages/Client/CardPages'))
+const Home = lazy(() => import('./features/client/Home/index'))
+const Register = lazy(() => import('./features/client/Resister'))
+const Introduction = lazy(() => import('./features/client/Introduction/index'))
+const Cart = lazy(() => import('./features/client/Cart'))
 
 function App(props) {
 
@@ -49,25 +43,27 @@ function App(props) {
             <Switch>
               <Route exact path="/">
                 <Suspense fallback={<Loading />}>
-                  <HomePage />
+                  <Home />
                 </Suspense>
               </Route>
+              
               <Route path="/Introduction">
                 <Suspense fallback={<Loading />}>
-                  <IntroductionPage />
+                  <Introduction />
                 </Suspense>
               </Route>
+
               <Route path="/register">
                 <Suspense fallback={<Loading />}>
-                  <RegisterPage
+                  <Register
                     onClickLogin={handleLoginClick}
                   />
                 </Suspense>
-
               </Route>
+
               <Route path="/card">
                 <Suspense fallback={<Loading />}>
-                  <CardPage />
+                  <Cart />
                 </Suspense>
               </Route>
             </Switch>

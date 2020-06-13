@@ -13,6 +13,10 @@ $color-text: #FFFFFF;
       font-size: 40px;
       color: $color-text;
     }
+    img{
+      width: 20px;
+      height: 20px;
+    }
     .collapse {
       font-size: 20px;
       a{
@@ -30,6 +34,19 @@ $color-text: #FFFFFF;
         width: 300px;
         margin-right: 29px;
       }
+    }
+  }
+
+  .dropdown-menu{
+    left: 10%;
+    background: #ffa233;
+
+    .dropdown-item{
+      color: $color-text;
+      font-weight: 500;
+    }
+    .dropdown-item:hover{
+      color: #333333;
     }
   }
 }

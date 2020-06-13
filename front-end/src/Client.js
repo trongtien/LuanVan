@@ -38,7 +38,7 @@ function App(props) {
             onClickLogin={handleLoginClick}
           />
           <SliderComponent />
-          <div className="container-fluid">
+          {/* <div className="container-fluid"> */}
 
             <Switch>
               <Route exact path="/">
@@ -70,7 +70,7 @@ function App(props) {
 
           </div>
           <FooterComponent />
-        </div>
+        {/* </div> */}
       </Suspense>
 
     </BrowserRouter>

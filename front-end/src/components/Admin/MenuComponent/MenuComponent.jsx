@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 
 import './style.scss'
 import {
-  Card, CardImg, CardText, CardBody, CardLink,
-  CardTitle, CardSubtitle
+  CardText, CardBody,
+  CardTitle
 } from 'reactstrap';
 
 

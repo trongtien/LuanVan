@@ -4,7 +4,6 @@ import {
   Row,
   Col,
   Card,
-  CardBody,
   Button,
   FormGroup,
   Label,
@@ -36,7 +35,7 @@ function LoginComponent(props) {
       <Row>
         <Col lg="7">
           <Card>
-            <CardBody>
+            <div className="cart-body">
               <div className="login-title">
                 <h1>Login</h1>
                 <p onClick={() => { hanldeClick(); }}
@@ -69,7 +68,7 @@ function LoginComponent(props) {
                           placeholder="password placeholder"
                         />
                       </FormGroup>
-                      <CardBody>
+                      <div cart-body>
                         <Button>Đăng Nhập </Button>
                         <Link
                           to="/register"
@@ -79,12 +78,12 @@ function LoginComponent(props) {
                         >
                           Chưa có tài khoản
                         </Link>
-                      </CardBody>
+                      </div>
                     </Form>
                   );
                 }}
               </Formik>
-            </CardBody>
+            </div>
           </Card>
         </Col>
       </Row>

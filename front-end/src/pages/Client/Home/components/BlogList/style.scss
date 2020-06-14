@@ -1,0 +1,68 @@
+.blog{
+  margin-top: 20px;
+  .card{
+    margin-top: 10px;
+  }
+  .card-title{
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .card-subtitle {
+    color: #828282;
+  }
+  .card-text{
+    color: #828282;
+    font-size: 14px;
+  }
+  .toggle-blog{
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+  }
+}
+
+.a-center{
+  text-align: center;
+  box-sizing: border-box;
+  h2{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    position: relative;
+    display: block;
+    line-height: normal;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  span{
+    display: inline-block;
+    border-radius: 20px;
+    background: #80bb35;
+    padding: 10.5px 20px;
+    margin: 0;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.a-center h2::before,  .a-center h2::after{
+  content: "";
+  height: 2px;
+  width: 50%;
+  background: #fe9705;
+  top: 50%;
+  z-index: -1;
+  position: absolute;
+}
+
+
+.a-center h2::before {
+  left: 0;
+}
+.a-center h2::after {
+  right: 0;
+}

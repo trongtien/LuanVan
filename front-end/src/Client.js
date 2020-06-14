@@ -1,5 +1,5 @@
 import React, { useState, Suspense, lazy } from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, useRouteMatch } from 'react-router-dom';
 
 import HeaderComponent from './components/Client/Header/HeaderConponent'
 import Loading from './components/Client/Loading/Loading'
@@ -13,7 +13,7 @@ const Introduction = lazy(() => import('./features/client/Introduction/index'))
 const Cart = lazy(() => import('./features/client/Cart'))
 
 function App(props) {
-
+  const match = useRouteMatch();
   const [isShowLogin, setIsShowLogin] = useState(false);
 
   function handleLoginClick() {
@@ -38,16 +38,15 @@ function App(props) {
             onClickLogin={handleLoginClick}
           />
           <SliderComponent />
-          {/* <div className="container-fluid"> */}
-
             <Switch>
-              <Route exact path="/">
+           
+              <Route exact path={match.url}>
                 <Suspense fallback={<Loading />}>
                   <Home />
                 </Suspense>
               </Route>
               
-              <Route path="/Introduction">
+              <Route exact path="/Introduction">
                 <Suspense fallback={<Loading />}>
                   <Introduction />
                 </Suspense>

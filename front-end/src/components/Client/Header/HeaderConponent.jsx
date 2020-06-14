@@ -56,7 +56,7 @@ function HeaderComponent(props) {
               </Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to="">
+              <Link className="nav-link" to="/Blog">
                 Blog
               </Link>
             </NavItem>

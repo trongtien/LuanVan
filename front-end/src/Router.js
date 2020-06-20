@@ -8,8 +8,11 @@ import Loading from './components/Client/Loading/Loading'
 import Login from './components/Client/Login/LoginComponent'
 
 // admin Views
+import Auth from './pages/Admin/Login'
 import Dashboard from './pages/Admin/DaboarePage.jsx'
 import ProductPage from './pages/Admin/ProductPage'
+
+
 // views
 const Home = lazy(() => import('./pages/Client/Home'))
 const Register = lazy(() => import('./pages/Client/Resister'))
@@ -27,11 +30,11 @@ function Router(props){
   return (
     // <Router>
       <Switch>
-        {/* <Route path='/login' component={Login} /> */}
-        <Route path='/admin/:path?' exact>
-          <MainAdmin>
+        <Route path='/admin' exact component={Auth} />
+        <Route path='/admin/:path?' exact >
+          <MainAdmin>  
             <Switch>
-              <Route path='/admin' exact component={Dashboard} />
+              <Route path='/admin/Dashboard' exact component={Dashboard} />
               <Route path='/admin/setting' component={ProductPage} />
             </Switch>
           </MainAdmin>

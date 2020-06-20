@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.scss'
-import { Table, Button } from 'reactstrap';
+import { Table, Button, Col} from 'reactstrap';
 
 function CartBill() {
   return (
@@ -23,7 +23,7 @@ function CartBill() {
           </tr>
         </tbody>
       </Table>
-      <Button color="danger">danger</Button>
+      <Button color="danger">Thanh toán</Button>
     </div>
   )
 }

@@ -19,9 +19,7 @@ function App(props) {
   // }
   return (
     <div className="App">
-      <Router  
-        onClickLogin={handleLoginClick}
-      />
+      <Router />
     </div>
   );
 }

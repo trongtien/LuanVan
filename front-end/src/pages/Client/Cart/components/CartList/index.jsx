@@ -1,36 +1,31 @@
 import React from 'react'
 import './style.scss'
-import { Table } from 'reactstrap';
+import { Table, CardImg, Input } from 'reactstrap';
+import Icon from './../../../../../Contants/icon'
 
 function ListCardComponent() {
   return (
-    <Table size="sm">
+    <Table  responsive>
       <thead>
         <tr>
-          <th>#</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Username</th>
+          <th>STT</th>
+          <th>Hình Ảnh</th>
+          <th>Tên Sản Phẩm</th>
+          <th>Đơn Giá</th>
+          <th>Số Lượng</th>
+          <th>Thành Tiền</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr className="list-cart-product">
           <th scope="row">1</th>
-          <td>Mark</td>
+          <td> <CardImg center width="100%" src={Icon.deleteIcon} className="image-cart" /></td>
           <td>Otto</td>
           <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
+          <td> <Input readonly/></td>
+          <td>@mdo</td>
+          <td><CardImg center width="100%" src={Icon.deleteIcon} className="icon-cart" /></td>
         </tr>
       </tbody>
     </Table>
